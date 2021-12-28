@@ -1,0 +1,19 @@
+﻿@model Payro.PayroMessage
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Message</h1>
+
+    <p>
+        <strong>Message Code:</strong> @Model?.error_code
+    </p>
+    <p>
+        <strong>Message:</strong> @Model?.error_message
+    </p>
+
+
+    <a class="btn btn-primary" href="@Url.Action("Payment","Home")">Pay Again</a>
+
+</div>
