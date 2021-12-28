@@ -10,7 +10,7 @@ namespace Payro
     {
         private string BaseURL = "https://api.payro24.ir/v1.0/";
         private bool IsSandBox = false;
-        private string Token = "5ff45e647432213b542d5937-xboag34zvq7fhihhhq80cuses";
+        private string Token = "";
         private PayroMessage? errorMessage = null;
 
         public PayroIPG(string p_token,bool is_sandbox = false)
